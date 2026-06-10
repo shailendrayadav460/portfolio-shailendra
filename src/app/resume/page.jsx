@@ -367,33 +367,6 @@ export default function ResumeViewer() {
         </div>
 
       </div>
-
-      <style jsx global>{`
-        @media print {
-          body {
-            background: white !important;
-            color: black !important;
-          }
-          header, footer, nav, .print\\:hidden {
-            display: none !important;
-          }
-          #resume-content {
-            background: white !important;
-            border: none !important;
-            box-shadow: none !important;
-            color: black !important;
-          }
-          #resume-content * {
-            color: black !important;
-          }
-          .text-purple-400, .bg-gradient-to-r {
-            background: none !important;
-            -webkit-background-clip: unset !important;
-            background-clip: unset !important;
-            color: #7c3aed !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

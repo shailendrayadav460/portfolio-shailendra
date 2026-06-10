@@ -179,5 +179,17 @@ body {
     border: none !important;
     box-shadow: none !important;
   }
+  header, footer, nav, .print\:hidden {
+    display: none !important;
+  }
+  #resume-content {
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+  #resume-content * {
+    color: black !important;
+  }
 }
 
