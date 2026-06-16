@@ -1,9 +1,11 @@
+const isVercel = process.env.VERCEL === '1';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
 
-  basePath: "/shailen-portfolio-2002",
-  assetPrefix: "/shailen-portfolio-2002",
+  basePath: isVercel ? undefined : "/shailen-portfolio-2002",
+  assetPrefix: isVercel ? undefined : "/shailen-portfolio-2002",
 
   eslint: {
     ignoreDuringBuilds: true,
