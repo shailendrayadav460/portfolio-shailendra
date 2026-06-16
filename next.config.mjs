@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+
   eslint: {
-    // Do not fail the build on ESLint warnings during CI/CD deployment
     ignoreDuringBuilds: true,
   },
+
   images: {
+    unoptimized: true, // Add this line
+
     remotePatterns: [
       {
         protocol: "https",
