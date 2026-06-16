@@ -2,13 +2,15 @@
 const nextConfig = {
   output: "export",
 
+  basePath: "/shailen-portfolio-2002",
+  assetPrefix: "/shailen-portfolio-2002",
+
   eslint: {
     ignoreDuringBuilds: true,
   },
 
   images: {
-    unoptimized: true, // Add this line
-
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
