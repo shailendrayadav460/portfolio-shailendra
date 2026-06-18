@@ -13,7 +13,7 @@ import {
   CheckCircle2,
   XCircle
 } from "lucide-react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { portfolioData } from "@/data/portfolioData";
 import { useTheme } from "@/context/ThemeContext";
 
