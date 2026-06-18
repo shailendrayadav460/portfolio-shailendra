@@ -259,11 +259,12 @@ export default function HomePage() {
                 <div className="relative h-20 sm:h-44 overflow-hidden bg-slate-950 flex items-center justify-center">
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent z-10"></div>
                   {project.image ? (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out"
-                      loading="lazy"
+                      fill
+                      className="object-cover opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   ) : (
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20`}></div>
