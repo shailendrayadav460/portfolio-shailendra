@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const isVercel = process.env.VERCEL === '1';
+const isDev = process.env.NODE_ENV === 'development';
+const prefix = (isVercel || isDev) ? "" : "/shailen-portfolio-2002";
+
 export const metadata = {
   title: "Shailendra Yadav | MERN Stack & Full Stack Developer Portfolio",
   description:
@@ -28,16 +32,16 @@ export const metadata = {
     "Web Developer Portfolio"
   ],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+    icon: `${prefix}/favicon.ico`,
+    shortcut: `${prefix}/favicon-32x32.png`,
+    apple: `${prefix}/apple-touch-icon.png`,
   },
-  manifest: "/site.webmanifest",
+  manifest: `${prefix}/site.webmanifest`,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
       <ThemeProvider>
         <ThemeBodyWrapper
           geistSans={geistSans.variable}
