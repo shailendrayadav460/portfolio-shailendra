@@ -219,11 +219,7 @@ export default function ProjectsPage() {
                 {/* Info Content */}
                 <div className="p-2 sm:p-6 flex flex-col justify-between flex-grow">
                   <div>
-                    <span className={`inline-block text-[8px] sm:text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full mb-1 sm:mb-3 ${
-                      isDark ? "text-purple-400 bg-purple-500/10 border border-purple-500/20" : "text-purple-700 bg-purple-100 border border-purple-200"
-                    }`}>
-                      {project.category || "Full Stack"}
-                    </span>
+
                     <h2 className={`text-xs sm:text-xl font-bold mb-0.5 sm:mb-2 group-hover:text-purple-500 transition-colors duration-300 line-clamp-1 ${
                       isDark ? "text-white" : "text-slate-900"
                     }`}>

@@ -102,8 +102,8 @@ export const portfolioData = {
       gradient: "from-purple-500 via-indigo-500 to-pink-500",
       emoji: "💼",
       category: "Full Stack",
-      link: "https://portfolio-shailendra-vjgv.vercel.app/",
-      demo: "https://portfolio-shailendra-vjgv.vercel.app/",
+      link: "https://portfolio-shailendra-yjgy.vercel.app/",
+      demo: "https://portfolio-shailendra-yjgy.vercel.app/",
       image: personalPortfolioImg
     },
     {
