@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { portfolioData } from "@/data/portfolioData";
 import { ExternalLink, Github, Filter, Sparkles, ChevronDown, Check } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
@@ -199,10 +200,11 @@ export default function ProjectsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent z-10"></div>
                   
                   {project.image ? (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-750 ease-out"
+                      fill
+                      className="object-cover opacity-40 group-hover:scale-105 transition-transform duration-750 ease-out"
                       loading="lazy"
                     />
                   ) : (

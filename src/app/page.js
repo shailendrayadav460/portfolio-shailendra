@@ -65,20 +65,15 @@ export default function HomePage() {
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
 
               {/* Profile Image Column */}
-              <div className="relative flex-shrink-0 group">
-                {/* Glow ring backing */}
-                <div className="absolute -inset-1.5 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-300 animate-tilt"></div>
-                <div className={`relative w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 shadow-2xl ${isDark ? "border-[#030014]" : "border-slate-50"
-                  }`}>
-                  <Image
-                    src={profileImg}
-                    alt={personalInfo.name}
-                    width={224}
-                    height={224}
-                    priority
-                    className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition duration-500 ease-out"
-                  />
-                </div>
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 shrink-0 overflow-hidden rounded-full border-4 border-white/10 shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 opacity-20"></div>
+                <Image
+                  src={profileImg}
+                  alt="Profile"
+                  fill
+                  className="relative z-10 object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* Text Intro Column */}
