@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import profileImg from "../images/body.jpg";
 import { useRouter } from "next/navigation";
+import profileImg from "../images/body.jpg";
 import { portfolioData } from "@/data/portfolioData";
 import { ArrowRight, Code, Shield, Cpu, Paintbrush, ChevronRight, Briefcase } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
@@ -17,7 +17,7 @@ export default function HomePage() {
   const [typingSpeed, setTypingSpeed] = useState(150);
   const { theme } = useTheme();
 
-  const { personalInfo, roles, skills, projects, services, stats, about } = portfolioData;
+  const { personalInfo, roles, skills, projects, services, stats } = portfolioData;
 
   useEffect(() => {
     const handleType = () => {
@@ -88,7 +88,7 @@ export default function HomePage() {
                       ? "text-purple-400 bg-purple-500/10 border border-purple-500/20"
                       : "text-purple-700 bg-purple-100 border border-purple-200"
                     }`}>
-                    <Briefcase className="w-3.5 h-3.5" /> MERN Stack Specialist
+                    <Briefcase className="w-3.5 h-3.5" /> Full-Stack Developer
                   </span>
                   <h1 className={`text-3xl sm:text-6xl font-extrabold tracking-tight mb-2 ${isDark ? "text-white" : "text-slate-900"
                     }`}>
@@ -107,20 +107,20 @@ export default function HomePage() {
 
                 <p className={`text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0 ${isDark ? "text-gray-400" : "text-slate-600"
                   }`}>
-                  A dedicated <span className={isDark ? "text-white font-semibold" : "text-slate-900 font-semibold"}>MERN Stack Developer</span> with <span className="text-pink-500 font-bold">{stats[0].num} Years Experience</span> — building full-stack apps with modern backend & frontend technologies.
+                  A dedicated <span className={isDark ? "text-white font-semibold" : "text-slate-900 font-semibold"}>Full-Stack Developer</span> with <span className="text-pink-500 font-bold">{stats[0].num} Years Experience</span> — building scalable web apps with React, Next.js, Node.js, PostgreSQL & AI integrations.
                 </p>
 
                 {/* Tech Stack Pills */}
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-start mt-1">
                   {[
-                    { label: "Node.js", color: "text-emerald-400 border-emerald-400/30 bg-emerald-400/8" },
-                    { label: "Express", color: "text-yellow-400  border-yellow-400/30  bg-yellow-400/8" },
-                    { label: "MongoDB", color: "text-lime-400    border-lime-400/30    bg-lime-400/8" },
-                    { label: "Socket.io", color: "text-sky-400     border-sky-400/30     bg-sky-400/8" },
-                    { label: "Payment Gateway", color: "text-violet-400  border-violet-400/30  bg-violet-400/8" },
-                    { label: "AI Integration", color: "text-rose-400    border-rose-400/30    bg-rose-400/8" },
-                    { label: "MCP Server", color: "text-cyan-400    border-cyan-400/30    bg-cyan-400/8" },
-                    { label: "Docker", color: "text-blue-400    border-blue-400/30    bg-blue-400/8" },
+                    { label: "React.js",    color: "text-cyan-400    border-cyan-400/30    bg-cyan-400/8" },
+                    { label: "Next.js",     color: "text-purple-400  border-purple-400/30  bg-purple-400/8" },
+                    { label: "Node.js",     color: "text-emerald-400 border-emerald-400/30 bg-emerald-400/8" },
+                    { label: "PostgreSQL",  color: "text-blue-400    border-blue-400/30    bg-blue-400/8" },
+                    { label: "Razorpay",    color: "text-violet-400  border-violet-400/30  bg-violet-400/8" },
+                    { label: "OpenAI API",  color: "text-rose-400    border-rose-400/30    bg-rose-400/8" },
+                    { label: "n8n",         color: "text-orange-400  border-orange-400/30  bg-orange-400/8" },
+                    { label: "Twilio",      color: "text-red-400     border-red-400/30     bg-red-400/8" },
                   ].map((tech) => (
                     <span
                       key={tech.label}
@@ -159,7 +159,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start pt-3">
                   <Link
                     href="/project"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-50 hover:to-pink-500 text-white font-bold rounded-xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.03] transition-all duration-300 gap-2 cursor-pointer text-sm sm:text-base"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold rounded-xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.03] transition-all duration-300 gap-2 cursor-pointer text-sm sm:text-base"
                   >
                     View My Work <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -192,20 +192,20 @@ export default function HomePage() {
             <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
             <p className={`mt-4 text-xs sm:text-base max-w-lg mx-auto ${isDark ? "text-gray-400" : "text-slate-600"
               }`}>
-              Delivering high-end full-stack capabilities, design system compliance, and optimized performance guidelines.
+              Delivering high-end full-stack capabilities, AI integrations, payment systems, and automated workflows.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, idx) => (
               <div
                 key={idx}
                 className="glass-panel glass-card-hover rounded-2xl p-6 flex flex-col justify-between"
               >
                 <div>
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-inner border ${isDark
-                      ? "bg-purple-500/10 border-purple-500/25 text-purple-400"
-                      : "bg-purple-100 border-purple-200 text-purple-700"
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-inner border text-2xl ${isDark
+                      ? "bg-purple-500/10 border-purple-500/25"
+                      : "bg-purple-100 border-purple-200"
                     }`}>
                     {serviceIcons[service.title] || service.icon}
                   </div>
@@ -231,7 +231,7 @@ export default function HomePage() {
               </h2>
               <p className={`text-xs sm:text-base ${isDark ? "text-gray-400" : "text-slate-600"
                 }`}>
-                Explore a selected set of full-stack and automation developments.
+                Live production apps — click to visit them.
               </p>
             </div>
             <Link
@@ -255,26 +255,26 @@ export default function HomePage() {
                     : "border-slate-200 hover:border-purple-500/20"
                   }`}
               >
-                {/* Visual Header */}
-                <div className="relative h-20 sm:h-44 overflow-hidden bg-slate-950 flex items-center justify-center">
+                {/* Visual Header with lazy-loaded image */}
+                <div className="relative h-32 sm:h-44 overflow-hidden bg-slate-950">
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent z-10"></div>
                   {project.image ? (
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
+                      className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700 ease-out"
+                      sizes="(max-width: 768px) 50vw, 33vw"
                     />
                   ) : (
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20`}></div>
                   )}
-                  <span className="relative z-20 text-3xl sm:text-6xl transform group-hover:scale-110 transition duration-500">
+                  <span className="relative z-20 flex items-center justify-center h-full text-3xl sm:text-5xl">
                     {project.emoji}
                   </span>
                 </div>
 
-                {/* Content Area */}
                 <div className="p-2 sm:p-6 flex flex-col justify-between flex-grow">
                   <div>
                     <h3 className={`text-xs sm:text-xl font-bold mb-0.5 sm:mb-2 group-hover:text-purple-500 transition-colors duration-300 line-clamp-1 ${isDark ? "text-white" : "text-slate-900"
@@ -311,7 +311,7 @@ export default function HomePage() {
                           : "text-purple-600 hover:text-purple-800"
                         }`}
                     >
-                      View Repo <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                      View Live <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                     </a>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ export default function HomePage() {
             </h2>
             <p className={`text-xs sm:text-base mb-8 max-w-xl mx-auto leading-relaxed ${isDark ? "text-gray-400" : "text-slate-600"
               }`}>
-              Have a challenging project or a hiring requirement? Let&apos;s connect. I&apos;m always open to discussing new opportunities, full-time MERN Developer roles, and creative collaborations.
+              Have a challenging project or a hiring requirement? Let&apos;s connect. I&apos;m always open to discussing new opportunities, full-time roles, and creative collaborations.
             </p>
             <Link
               href="/contact"

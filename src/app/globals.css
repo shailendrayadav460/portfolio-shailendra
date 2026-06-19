@@ -8,9 +8,9 @@
   --font-geist-sans: var(--font-geist-sans);
   --font-geist-mono: var(--font-geist-mono);
   
-  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-bg: rgba(255, 255, 255, 0.55);
   --glass-border: rgba(15, 23, 42, 0.08);
-  --glass-bg-hover: rgba(255, 255, 255, 0.7);
+  --glass-bg-hover: rgba(255, 255, 255, 0.75);
   --glass-border-hover: rgba(139, 92, 246, 0.35);
   --glass-shadow-hover: rgba(139, 92, 246, 0.08);
   
@@ -21,15 +21,14 @@
   --background: #030014;
   --foreground: #f3f4f6;
   
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-bg: rgba(10, 5, 30, 0.6);
   --glass-border: rgba(255, 255, 255, 0.07);
-  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-bg-hover: rgba(20, 10, 50, 0.75);
   --glass-border-hover: rgba(139, 92, 246, 0.45);
   --glass-shadow-hover: rgba(139, 92, 246, 0.3);
   
   --blob-opacity: 0.45;
 }
-
 
 body {
   background-color: var(--background);
@@ -40,22 +39,37 @@ body {
 
 /* Custom premium design system elements */
 
+/* 
+  Performance-optimized glass panel:
+  - Mobile: No backdrop-filter (too GPU-heavy) — uses a solid semi-transparent bg instead
+  - Desktop (768px+): Enable blur via media query where GPU handles it much better
+*/
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
+}
+
+@media (min-width: 768px) {
+  .glass-panel {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
 }
 
 .glass-panel-light {
   background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+@media (min-width: 768px) {
+  .glass-panel-light {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
 .glass-card-hover {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card-hover:hover {
@@ -184,4 +198,3 @@ body {
     color: black !important;
   }
 }
-

@@ -1,85 +1,82 @@
+import aiSaasImg from "../images/ai-saas.png";
+import remindMeImg from "../images/RemindMe.png";
+import clientPannelImg from "../images/client-pannel-project.png";
+import opt2dealImg from "../images/opt2deal-project.png";
+import personalPortfolioImg from "../images/personal-portfolio.png";
+
 export const portfolioData = {
   personalInfo: {
     name: "Shailendra Yadav",
     nickname: "Badal",
-    title: "MERN Stack Developer",
-    email: "shailendrayadaw2004@gmail.com",
+    title: "Full-Stack Developer",
+    email: "badalyadav7493@gmail.com",
     phone: "+91-9305815719",
-    location: "Sector 76, Noida, Uttar Pradesh, India",
+    location: "Noida-201309, Uttar Pradesh, India",
     github: "https://github.com/shailendrayadav460",
-    linkedin: "https://linkedin.com/in/shailendra-yadav-5b18aa222",
+    linkedin: "https://www.linkedin.com/in/shailendra-yadavvy",
     twitter: "https://twitter.com/",
     resumeUrl: "/resume"
   },
 
   roles: [
-    "MERN Stack Developer",
-    "Full Stack Developer",
+    "Full-Stack Developer",
     "React Developer",
+    "Next.js Developer",
     "AI & Automation Builder",
     "Backend Engineer"
   ],
 
   about: {
-    summary: "Passionate MERN Stack Developer with 1.3+ years of professional experience building scalable, high-performance web applications. Highly skilled in React for building dynamic, component-driven UIs and building robust backend systems with Node.js, Express, and MongoDB. Experienced with real-time Socket.io applications, Payment Gateway integrations (Razorpay & Stripe), AI Integration with OpenAI APIs, MCP Server configuration, Docker containerization, and n8n workflow automation. Committed to writing clean, production-ready code and delivering real value on every project.",
-    detailedBio: "I enjoy solving real-world problems through technology. My strongest skill is React — I've built complex, state-heavy applications including drag-and-drop builders, real-time boards, and AI-powered chat interfaces. On the backend, I architect REST APIs with Node.js and Express, design MongoDB schemas, and build WebSocket-powered systems with Socket.io. I've integrated Razorpay and Stripe payment gateways, automated business workflows with n8n, and configured MCP Servers for AI agent use. I'm currently deepening my Docker and DevOps skills."
+    summary: "Full Stack Developer with hands-on experience in designing, developing, and deploying scalable web applications using React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, and MySQL. Skilled in building secure RESTful APIs, implementing authentication and authorization with JWT, OAuth 2.0, and RBAC, and integrating third-party services including Razorpay, Twilio WhatsApp API, and Google Workspace APIs. Experienced in AI-powered application development, LLM integrations, prompt engineering, and business workflow automation using n8n. Proficient in Git and GitHub for version control, with practical experience deploying and maintaining production applications on Vercel and Render.",
+    detailedBio: "Passionate about building high-quality, user-centric solutions and continuously learning modern technologies to solve real-world business challenges. I enjoy solving real-world problems through technology. My strongest skill is React — I've built complex, state-heavy applications including AI SaaS platforms, real-time boards, and AI-powered chat interfaces. On the backend, I architect REST APIs with Node.js and Express, design MongoDB and PostgreSQL schemas, and integrate payment gateways including Razorpay with Twilio WhatsApp API. I've automated business workflows with n8n, integrated Google Workspace APIs, and worked with LLMs including ChatGPT and Claude."
   },
 
   skills: [
-    // Frontend — React is primary strength
-    { name: "React",            category: "Frontend",         level: 92, color: "from-blue-400 to-cyan-500" },
-    { name: "JavaScript",       category: "Frontend",         level: 90, color: "from-yellow-400 to-amber-500" },
-    { name: "HTML5 & CSS3",     category: "Frontend",         level: 95, color: "from-orange-400 to-red-500" },
-    { name: "TailwindCSS",      category: "Frontend",         level: 90, color: "from-cyan-400 to-teal-500" },
-    { name: "Next.js",          category: "Frontend",         level: 65, color: "from-purple-500 to-indigo-600" },
-    { name: "n8n Automation",   category: "AI & Automation",  level: 85, color: "from-red-500 to-orange-600" },
+    // Frontend
+    { name: "React.js",           category: "Frontend",         level: 92, color: "from-blue-400 to-cyan-500" },
+    { name: "Next.js",            category: "Frontend",         level: 85, color: "from-purple-500 to-indigo-600" },
+    { name: "JavaScript (ES6+)",  category: "Frontend",         level: 90, color: "from-yellow-400 to-amber-500" },
+    { name: "HTML5 & CSS3",       category: "Frontend",         level: 95, color: "from-orange-400 to-red-500" },
+    { name: "TailwindCSS",        category: "Frontend",         level: 90, color: "from-cyan-400 to-teal-500" },
+    { name: "Bootstrap",          category: "Frontend",         level: 80, color: "from-violet-400 to-purple-500" },
     // Backend
-    { name: "Node.js",          category: "Backend",          level: 88, color: "from-green-400 to-emerald-500" },
-    { name: "Express.js",       category: "Backend",          level: 87, color: "from-gray-500 to-gray-700" },
-    { name: "REST APIs",        category: "Backend",          level: 90, color: "from-blue-500 to-indigo-500" },
-    { name: "Socket.io",        category: "Backend",          level: 80, color: "from-purple-400 to-pink-500" },
-    { name: "Payment Gateway",  category: "Backend",          level: 78, color: "from-violet-500 to-purple-700" },
-    { name: "MCP Server",       category: "Backend",          level: 70, color: "from-sky-400 to-blue-600" },
+    { name: "Node.js",            category: "Backend",          level: 88, color: "from-green-400 to-emerald-500" },
+    { name: "Express.js",         category: "Backend",          level: 87, color: "from-gray-500 to-gray-700" },
+    { name: "REST API Dev",       category: "Backend",          level: 90, color: "from-blue-500 to-indigo-500" },
+    { name: "JWT Auth",           category: "Backend",          level: 85, color: "from-amber-400 to-yellow-600" },
+    { name: "Prisma ORM",         category: "Backend",          level: 75, color: "from-teal-400 to-cyan-600" },
+    { name: "Razorpay",           category: "Backend",          level: 82, color: "from-violet-500 to-purple-700" },
+    { name: "Twilio WhatsApp",    category: "Backend",          level: 78, color: "from-red-400 to-pink-500" },
     // Database
-    { name: "MongoDB",          category: "Database",         level: 85, color: "from-emerald-500 to-green-600" },
-    { name: "SQL",              category: "Database",         level: 68, color: "from-blue-600 to-blue-800" },
+    { name: "MongoDB",            category: "Database",         level: 85, color: "from-emerald-500 to-green-600" },
+    { name: "PostgreSQL",         category: "Database",         level: 78, color: "from-blue-600 to-blue-800" },
+    { name: "MySQL",              category: "Database",         level: 72, color: "from-orange-500 to-amber-600" },
     // AI & Automation
-    { name: "AI Integration",   category: "AI & Automation",  level: 75, color: "from-rose-400 to-pink-600" },
+    { name: "OpenAI API",         category: "AI & Automation",  level: 82, color: "from-rose-400 to-pink-600" },
+    { name: "n8n Automation",     category: "AI & Automation",  level: 85, color: "from-red-500 to-orange-600" },
+    { name: "LLM Integration",    category: "AI & Automation",  level: 78, color: "from-fuchsia-500 to-purple-600" },
+    // Google APIs
+    { name: "Google Workspace",   category: "Integrations",     level: 75, color: "from-sky-400 to-blue-500" },
+    { name: "OAuth 2.0",          category: "Integrations",     level: 80, color: "from-lime-400 to-green-500" },
     // DevOps & Tools
-    { name: "Docker",           category: "DevOps & Tools",   level: 70, color: "from-sky-500 to-blue-600" },
-    { name: "Git & GitHub",     category: "DevOps & Tools",   level: 90, color: "from-zinc-600 to-zinc-900" },
-    { name: "Postman",          category: "DevOps & Tools",   level: 88, color: "from-orange-500 to-red-500" }
+    { name: "Git & GitHub",       category: "DevOps & Tools",   level: 90, color: "from-zinc-600 to-zinc-900" },
+    { name: "Postman",            category: "DevOps & Tools",   level: 88, color: "from-orange-500 to-red-500" },
+    { name: "VS Code",            category: "DevOps & Tools",   level: 92, color: "from-blue-400 to-indigo-500" },
+    { name: "Docker",             category: "DevOps & Tools",   level: 70, color: "from-sky-500 to-blue-600" },
   ],
 
   experience: [
     {
       id: 1,
-      role: "MERN Stack Developer",
-      company: "Freelance & Professional Projects",
-      duration: "Jan 2025 – Present",
-      location: "Remote / Noida",
-      description: "Architecting and delivering full-stack web applications using React, Node.js, Express, and MongoDB — with real-time features, payment integrations, AI capabilities, and automated workflows.",
+      role: "Software Developer",
+      company: "AyanshTech Solutions",
+      duration: "Feb 2025 – Present",
+      location: "Noida, India",
+      description: "Developed and maintained full-stack web applications using React.js, Next.js, Node.js, and Express.js, building scalable RESTful APIs and integrating MongoDB, PostgreSQL, and MySQL databases.",
       points: [
-        "Built 'BMailPro — Real Estate Campaign Builder' using React — a drag-and-drop email template designer with live preview, dynamic field injection, and EmailJS-powered campaign dispatch.",
-        "Integrated Razorpay & Stripe payment gateways in e-commerce apps with secure webhook handling, order lifecycle management, and refund flows.",
-        "Implemented real-time collaboration features using Socket.io — live Kanban boards, multi-user cursors, and instant comment sync.",
-        "Automated multi-step business workflows using n8n — lead capture from web forms, CRM data sync, automated email sequences, and API orchestration.",
-        "Integrated OpenAI API with MCP Server configuration to build an AI assistant capable of performing tool calls, file operations, and API lookups.",
-        "Containerized Node.js backend services with Docker for consistent development and production environments.",
-        "Achieved 40%+ PageSpeed improvement through React lazy loading, code splitting, image optimization, and server-side rendering."
-      ]
-    },
-    {
-      id: 2,
-      role: "Frontend Developer (Academic Projects)",
-      company: "Feroze Gandhi Institute of Engineering and Technology",
-      duration: "Jul 2023 – Dec 2024",
-      location: "Raebareli, UP",
-      description: "Built interactive web applications and dashboards as part of the academic curriculum, establishing strong foundations in frontend engineering, JavaScript, and version control.",
-      points: [
-        "Developed dynamic web apps with JavaScript, HTML5 & CSS3 focusing on responsive, mobile-first layouts.",
-        "Built and styled multiple academic project UIs with clean structure and cross-browser compatibility.",
-        "Used Git & GitHub for team collaboration with proper branching, pull requests, and commit management."
+        "Developed and maintained full-stack web applications using React.js, Next.js, Node.js, and Express.js, building scalable RESTful APIs and integrating MongoDB, PostgreSQL, and MySQL databases.",
+        "Implemented secure authentication and authorization using JWT, bcrypt, OAuth 2.0, and role-based access control (RBAC), while integrating third-party services such as Razorpay, Twilio WhatsApp API, and Google Workspace APIs.",
+        "Built and integrated AI-powered features and n8n automation workflows, connecting multiple business systems and APIs to streamline processes, enhance productivity, and improve user experience."
       ]
     }
   ],
@@ -87,115 +84,92 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "BMailPro — Real Estate Campaign Builder",
-      description: "A drag-and-drop email campaign builder for real estate agents. Features dynamic template selection, live preview, contact management, and automated email dispatch via EmailJS.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "EmailJS", "TailwindCSS"],
+      title: "AI-SaaS Platform",
+      description: "A full-stack AI SaaS productivity platform with an interactive AI chatbot that uses a dynamic tool-calling system to recognize user intent and automatically trigger the correct third-party API — such as creating a Google Doc, scheduling a Calendar event, or sending a Gmail — without any manual navigation. Integrated Razorpay Payment Gateway for Free vs PRO subscriptions and Twilio WhatsApp API.",
+      tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "Tailwind CSS", "Framer Motion", "Recharts"],
       gradient: "from-blue-500 via-cyan-500 to-teal-500",
-      emoji: "🏠",
-      category: "Full Stack",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+      emoji: "🤖",
+      category: "AI SaaS",
+      link: "https://ai-saas-three-eosin.vercel.app/login",
+      demo: "https://ai-saas-three-eosin.vercel.app/login",
+      image: aiSaasImg
     },
     {
       id: 2,
-      title: "MERN E-Commerce with Payment Gateway",
-      description: "A full-stack e-commerce platform with product catalog, cart system, Razorpay & Stripe payment integration, order tracking, admin dashboard, and JWT-secured APIs.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Razorpay", "Stripe", "TailwindCSS"],
+      title: "Personal Portfolio",
+      description: "A highly interactive portfolio highlighting 1.3+ years of professional experience as a Full Stack Developer, complete with a structured resume viewer, project gallery, contact portal, and theme toggle (light/dark mode). Engineered with Next.js 15, React 19, Tailwind CSS v4 (with PostCSS), and Lucide Icons.",
+      tech: ["Next.js", "React.js", "Tailwind CSS", "Lucide Icons", "PostCSS"],
       gradient: "from-purple-500 via-indigo-500 to-pink-500",
-      emoji: "🛍️",
+      emoji: "💼",
       category: "Full Stack",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80"
+      link: "https://portfolio-shailendra-vjgv.vercel.app/",
+      demo: "https://portfolio-shailendra-vjgv.vercel.app/",
+      image: personalPortfolioImg
     },
     {
       id: 3,
-      title: "Real-time Collaboration Board",
-      description: "A live team workspace with drag-and-drop Kanban task cards, real-time sync via Socket.io, live commenting, multi-user cursor tracking, and instant notifications.",
-      tech: ["React", "Node.js", "Express", "Socket.io", "MongoDB", "TailwindCSS"],
+      title: "RemindMe App",
+      description: "A complete mobile reminder app with full frontend, backend, and REST APIs. Features task scheduling, push notifications, user authentication, and a clean mobile-responsive UI.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
       gradient: "from-emerald-500 via-teal-500 to-green-500",
-      emoji: "✅",
-      category: "MERN Stack",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80"
+      emoji: "⏰",
+      category: "Full Stack",
+      link: "https://remindme.website-design-india.com/",
+      demo: "https://remindme.website-design-india.com/",
+      image: remindMeImg
     },
     {
       id: 4,
-      title: "n8n Business Automation Suite",
-      description: "Multi-step workflow automation pipelines built with n8n — lead capture, CRM data sync, automated email follow-up sequences, Slack notifications, and REST API chaining.",
-      tech: ["n8n", "REST APIs", "Webhooks", "EmailJS", "MongoDB"],
+      title: "Opt-Deal Dashboard",
+      description: "A desktop dashboard application with API integration, advanced data viewing, searching, and management features. Built for business data operations with a clean, professional interface.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "TailwindCSS"],
       gradient: "from-red-500 via-orange-500 to-amber-500",
-      emoji: "⚡",
-      category: "Automation",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80"
+      emoji: "📊",
+      category: "Full Stack",
+      link: "https://opt-deal.vercel.app/",
+      demo: "https://opt-deal.vercel.app/",
+      image: opt2dealImg
     },
     {
       id: 5,
-      title: "AI Chat Assistant with MCP Server",
-      description: "An AI chat interface powered by OpenAI API with MCP Server tool configuration — enabling AI agents to perform file operations, make API calls, and web lookups via natural language.",
-      tech: ["React", "Node.js", "OpenAI API", "MCP Server", "Express", "MongoDB"],
+      title: "Client Pannel",
+      description: "A React client management frontend with chat, video calls, payments, AI integration, real Jarvis assistant, human cloth wear e-commerce, and n8n automation workflows.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "n8n", "TailwindCSS"],
       gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
-      emoji: "🤖",
-      category: "AI Integration",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: 6,
-      title: "Dynamic Portfolio CMS Dashboard",
-      description: "A headless CMS for managing portfolio content — projects, experience, and skills — with JWT authentication, role-based access control, and a live admin dashboard.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "TailwindCSS"],
-      gradient: "from-amber-500 via-orange-500 to-red-500",
-      emoji: "📁",
+      emoji: "🧑‍💼",
       category: "Full Stack",
-      link: "https://github.com/shailendrayadav460",
-      demo: "",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      link: "https://client-pannel.vercel.app/",
+      demo: "https://client-pannel.vercel.app/",
+      image: clientPannelImg
     }
   ],
 
   education: [
     {
-      degree: "Bachelor of Technology — Electronics & Communication Engineering",
-      school: "Feroze Gandhi Institute of Engineering and Technology",
-      location: "Raebareli, Uttar Pradesh",
+      degree: "Bachelor of Technology (B.Tech)",
+      school: "Dr. A.P.J. Abdul Kalam Technical University",
+      location: "Lucknow, Uttar Pradesh",
       year: "2024",
       grade: "First Division"
-    },
-    {
-      degree: "Intermediate — Class XII",
-      school: "Government Inter College",
-      location: "Pratapgarh, Uttar Pradesh",
-      year: "2020",
-      board: "UP Board"
-    },
-    {
-      degree: "High School — Class X",
-      school: "St. Anthony Inter College",
-      location: "Pratapgarh, Uttar Pradesh",
-      year: "2018",
-      board: "UP Board"
     }
   ],
 
   certifications: [
-    "JavaScript for Beginners — Great Learning",
-    "HTML Fundamentals — Great Learning",
-    "CSS for Beginners — Great Learning",
-    "Node.js & Express — Udemy",
-    "MongoDB for Developers — MongoDB University",
-    "Docker Essentials — IBM SkillsBuild"
+    "TCS iON NQT – Cognitive Skills | Score: 55.6% — Evaluated on analytical thinking, cognitive aptitude, and problem-solving"
   ],
 
   achievements: [
     "Scored 55.6% in TCS iON National Qualifier Test (NQT) — demonstrating strong logic, analytical reasoning, and algorithmic problem-solving.",
-    "Delivered 15+ full-stack freelance projects with 100% client satisfaction and on-time delivery.",
-    "Built and integrated a production-grade MCP Server with OpenAI API for a live AI assistant product."
+    "Deployed 5+ production-grade applications on Vercel and Render with real users.",
+    "Built and integrated AI-powered features with n8n automation workflows connecting multiple business systems."
+  ],
+
+  softSkills: [
+    "Analytical Problem-Solving",
+    "Adaptability",
+    "Clear Communication",
+    "Team Collaboration",
+    "Continuous Learning"
   ],
 
   languages: ["English", "Hindi"],
@@ -205,45 +179,45 @@ export const portfolioData = {
     {
       icon: "💻",
       title: "Full Stack Development",
-      desc: "End-to-end web apps — React on the frontend, Node.js + Express + MongoDB on the backend, deployed with Docker.",
+      desc: "End-to-end web apps — React & Next.js on the frontend, Node.js + Express + MongoDB/PostgreSQL on the backend, deployed on Vercel & Render.",
       color: "border-blue-500/30 text-blue-400 bg-blue-500/5"
     },
     {
-      icon: "⚡",
-      title: "Real-time & Socket Systems",
-      desc: "Live collaborative apps, chat systems, and dashboards powered by Socket.io with WebSocket connections.",
-      color: "border-amber-500/30 text-amber-400 bg-amber-500/5"
+      icon: "🤖",
+      title: "AI Integration & Automation",
+      desc: "OpenAI API integrations, AI-powered application development, LLM integrations (ChatGPT, Claude), and intelligent chat assistants.",
+      color: "border-rose-500/30 text-rose-400 bg-rose-500/5"
     },
     {
       icon: "💳",
       title: "Payment Gateway Integration",
-      desc: "Seamless Razorpay & Stripe integrations with secure webhooks, subscription billing, and order management.",
+      desc: "Seamless Razorpay integrations with Twilio WhatsApp API, secure webhooks, subscription billing (Free vs PRO tiers), and order management.",
       color: "border-violet-500/30 text-violet-400 bg-violet-500/5"
-    },
-    {
-      icon: "🤖",
-      title: "AI Integration & MCP Server",
-      desc: "OpenAI & Gemini API integrations, MCP Server configuration for AI agents, and intelligent chat assistants.",
-      color: "border-rose-500/30 text-rose-400 bg-rose-500/5"
     },
     {
       icon: "🔄",
       title: "n8n Workflow Automation",
-      desc: "Automated business pipelines — lead capture, CRM sync, email sequences, API orchestration — using n8n.",
+      desc: "Automated business pipelines — lead capture, CRM sync, email sequences, API orchestration — using n8n to connect multiple business systems.",
       color: "border-orange-500/30 text-orange-400 bg-orange-500/5"
+    },
+    {
+      icon: "🌐",
+      title: "Google Workspace APIs",
+      desc: "Integration with Gmail, Google Calendar, Drive, Docs, Sheets, and Meet APIs using OAuth 2.0 for seamless productivity automation.",
+      color: "border-sky-500/30 text-sky-400 bg-sky-500/5"
     },
     {
       icon: "🎨",
       title: "Premium UI/UX Design",
-      desc: "Stunning, responsive React UIs with TailwindCSS, glassmorphism, micro-animations, and dark/light themes.",
+      desc: "Stunning, responsive React UIs with TailwindCSS, Framer Motion animations, glassmorphism, data visualization with Recharts, and dark/light themes.",
       color: "border-purple-500/30 text-purple-400 bg-purple-500/5"
     }
   ],
 
   stats: [
     { num: "1.3+", label: "Years Experience",    gradient: "from-blue-500 to-cyan-500" },
-    { num: "15+",  label: "Projects Delivered",  gradient: "from-purple-500 to-pink-500" },
-    { num: "8+",   label: "Tech Stack Mastered", gradient: "from-emerald-500 to-teal-500" },
+    { num: "5+",   label: "Live Projects",       gradient: "from-purple-500 to-pink-500" },
+    { num: "10+",  label: "Tech Stack Mastered", gradient: "from-emerald-500 to-teal-500" },
     { num: "100%", label: "Client Satisfaction", gradient: "from-orange-500 to-red-500" }
   ]
 };
