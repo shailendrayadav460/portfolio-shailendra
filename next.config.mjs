@@ -1,12 +1,13 @@
 const isVercel = process.env.VERCEL === '1';
 const isDev = process.env.NODE_ENV === 'development';
+const isDocker = process.env.DOCKER === '1';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isVercel ? undefined : "export",
+  output: isDocker ? "standalone" : (isVercel ? undefined : "export"),
 
-  basePath: (isVercel || isDev) ? undefined : "/shailen-portfolio-2002",
-  assetPrefix: (isVercel || isDev) ? undefined : "/shailen-portfolio-2002",
+  basePath: (isVercel || isDev || isDocker) ? undefined : "/shailen-portfolio-2002",
+  assetPrefix: (isVercel || isDev || isDocker) ? undefined : "/shailen-portfolio-2002",
 
   eslint: {
     ignoreDuringBuilds: true,
