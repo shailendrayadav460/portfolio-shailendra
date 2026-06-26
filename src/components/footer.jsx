@@ -122,6 +122,7 @@ export default function Footer() {
               <Link href="/resume" className="hover:text-purple-500 transition-colors">Resume</Link>
               <Link href="/project" className="hover:text-purple-500 transition-colors">Projects</Link>
               <Link href="/contact" className="hover:text-purple-500 transition-colors">Contact</Link>
+              <Link href="/privacy-policy" className="hover:text-purple-500 transition-colors">Privacy Policy</Link>
             </div>
           </div>
         </div>
@@ -134,9 +135,14 @@ export default function Footer() {
           theme === "dark" ? "text-gray-500" : "text-slate-400"
         }`}>
           <p>© {currentYear} {personalInfo.name}. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            Built with <Heart className="w-3.5 h-3.5 text-pink-500 fill-pink-500" /> using Next.js & TailwindCSS
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="hover:text-purple-500 transition-colors font-medium">
+              Privacy Policy
+            </Link>
+            <p className="flex items-center gap-1">
+              Built with <Heart className="w-3.5 h-3.5 text-pink-500 fill-pink-500" /> using Next.js &amp; TailwindCSS
+            </p>
+          </div>
         </div>
       </div>
     </footer>
