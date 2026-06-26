@@ -1,14 +1,8 @@
 "use client";
 
 import { useTheme } from "@/context/ThemeContext";
-import { Shield, Eye, Lock, Database, Mail, Phone, RefreshCw, UserCheck, Globe, FileText } from "lucide-react";
+import { Shield, Eye, Lock, Database, Mail, Phone, RefreshCw, UserCheck, Globe } from "lucide-react";
 import Link from "next/link";
-
-export const metadata = {
-  title: "Privacy Policy | Shailendra Yadav Portfolio",
-  description:
-    "Read the Privacy Policy for Shailendra Yadav's personal portfolio website. Learn how your data is collected, used, and protected.",
-};
 
 const sections = [
   {
